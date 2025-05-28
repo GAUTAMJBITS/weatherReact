@@ -33,7 +33,7 @@ export default function App() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const apiKey = import.meta.VITE_WEATHER_API_KEY;
+  const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
   async function fetchWeather() {
     if (!city.trim()) return;
